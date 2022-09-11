@@ -1,0 +1,230 @@
+:root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    background-color: var(--White);
+    font-size: 15px;
+    background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 0px left -20px, top 60px right 0px;
+}
+
+.container {
+    max-width: 930px;
+    margin: 100px auto 20px;
+}
+
+
+/* --------------top-review----------------- */
+
+
+.top-review {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+
+.text {
+    width: 360px;
+}
+
+.text h1 {
+    color: var(--Very-Dark-Magenta);
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.text p {
+    color: var(--Dark-Grayish-Magenta);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+
+
+.rating-1 {
+    background-color: var(--Light-Grayish-Magenta);
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+    display: flex;
+    width: 360px;
+    padding: 14px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    position: relative;
+    right: 90px;
+}
+
+.rating-2 {
+    background-color: var(--Light-Grayish-Magenta);
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+    display: flex;
+    width: 360px;
+    padding: 14px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    position: relative;
+    right: 45px;
+
+}
+
+.rating-3 {
+    background-color: var(--Light-Grayish-Magenta);
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+    display: flex;
+    width: 360px;
+    padding: 14px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+
+}
+
+.stars {
+    margin-right: 20px;
+}
+
+.stars img {
+    width: 15px;
+    margin-right: 2px;
+}
+
+/* --------------bottom-review----------------- */
+
+.bottom-review {
+    display: flex;
+    justify-content: space-between
+}
+
+.review-1 {
+    background-color: var(--Very-Dark-Magenta);
+    width: 290px;
+    padding: 30px 25px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 30px;
+}
+
+.review-2 {
+    background-color: var(--Very-Dark-Magenta);
+    width: 290px;
+    padding: 30px 25px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 15px;
+}
+
+.review-3 {
+    background-color: var(--Very-Dark-Magenta);
+    width: 290px;
+    padding: 30px 25px;
+    border-radius: 10px;
+}
+
+.profile {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 35px;
+    border-radius: 100%;
+}
+
+.profile h4 {
+    color: var(--White);
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.profile h4 span {
+    color: var(--Soft-Pink);
+    font-weight: 400;
+}
+
+.review-text p {
+    color: var(--Light-Grayish-Magenta);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+.attribution {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.attribution span {
+    color: hsl(228, 45%, 44%);
+}
+
+
+
+
+@media(max-width:500px) {
+    body {
+        background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: top 0px left -30px, bottom 0px right 0px;
+    }
+
+    .container {
+        max-width: 290px;
+        margin-top: 70px;
+    }
+
+    .text h1 {
+        font-size: 35px;
+    }
+
+    .top-review {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .rating-1 {
+        position: static;
+        display: block;
+        width: 290px;
+    }
+
+    .rating-2 {
+        position: static;
+        display: block;
+        width: 290px;
+    }
+
+    .rating-3 {
+        position: static;
+        display: block;
+        width: 290px;
+    }
+
+    .bottom-review{
+        display: block;
+    }
+}
